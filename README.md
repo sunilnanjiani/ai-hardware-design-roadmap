@@ -93,6 +93,8 @@ For the full beginner path into FPGA and ASIC engineering, follow the excellent 
 - Simulation with Verilator or Icarus, and testbenches with cocotb
 - Computer architecture basics: a simple RISC-V pipeline, memory hierarchy, bandwidth vs latency
 
+📚 **Resources:** [resources/foundations.md](resources/foundations.md#stage-0-hardware-foundations)
+
 **Milestones**
 
 - [ ] Write, simulate and synthesise a pipelined fixed-point multiply-accumulate (MAC) unit.
@@ -114,6 +116,8 @@ For the full beginner path into FPGA and ASIC engineering, follow the excellent 
 - PyTorch fundamentals: tensors, building and training a small model, exporting to ONNX
 - Number formats: FP32, FP16, BF16, INT8, INT4, FP8 and why they matter for area and energy
 - Workload analysis: counting MACs and parameters, arithmetic intensity, the roofline model
+
+📚 **Resources:** [resources/foundations.md](resources/foundations.md#stage-1-ml-foundations-for-hardware-engineers)
 
 **Milestones**
 
@@ -143,6 +147,8 @@ Pick **one** track to go deep on first. Each track has its own topics and milest
 - Performance and energy modelling: cycle counts, utilisation, design-space exploration tools (e.g. Timeloop/Accelergy, SCALE-Sim)
 - Case studies: Google TPU, NVDLA, Eyeriss, Gemmini
 
+📚 **Resources:** [resources/accelerator-design.md](resources/accelerator-design.md)
+
 **Milestones**
 
 - [ ] Implement a parameterised N×N systolic array for INT8 matrix multiply in RTL, verified with cocotb.
@@ -165,6 +171,8 @@ Pick **one** track to go deep on first. Each track has its own topics and milest
 - Verifying ML accelerators: golden models from PyTorch/NumPy, bit-accurate quantization checks
 - Open benchmarks and generators: riscv-dv, sv-tests
 
+📚 **Resources:** [resources/ml-verification.md](resources/ml-verification.md)
+
 **Milestones**
 
 - [ ] Build a cocotb testbench with functional coverage for a non-trivial block (e.g. your Stage 0 MAC or an ALU).
@@ -186,6 +194,8 @@ Pick **one** track to go deep on first. Each track has its own topics and milest
 - Compilers and runtimes: ONNX, TVM, MLIR, TensorFlow Lite Micro, ExecuTorch
 - Edge deployment on CPUs and microcontrollers (e.g. Arm Cortex-M / Cortex-A)
 
+📚 **Resources:** [resources/hardware-aware-ml.md](resources/hardware-aware-ml.md)
+
 **Milestones**
 
 - [ ] Quantize your Stage 1 CNN to INT8 with PTQ and with QAT, and compare accuracy.
@@ -206,6 +216,8 @@ Pick **one** track to go deep on first. Each track has its own topics and milest
 - Compiling a model onto your own hardware: from ONNX graph to your accelerator's instructions
 - FPGA bring-up: timing closure, resource budgeting, on-board measurement
 - Benchmarking honestly: throughput, latency, energy per inference, accuracy, and comparison with a CPU baseline
+
+📚 **Resources:** [resources/advanced.md](resources/advanced.md#stage-3-build-end-to-end)
 
 **Milestones**
 
@@ -231,6 +243,8 @@ Pick the topics that interest you:
 - **ML for EDA:** placement and routing with ML, timing and congestion prediction, LLM-assisted RTL design
 - **Reliability and security** of AI accelerators
 
+📚 **Resources:** [resources/advanced.md](resources/advanced.md#stage-4-advanced-and-research-topics)
+
 **How to keep up**
 
 - Read papers from ISCA, MICRO, HPCA, ASPLOS, DAC, ICCAD, FPGA (the ACM/SIGDA symposium), FCCM and MLSys.
@@ -249,8 +263,8 @@ Pick the topics that interest you:
 | Part | Status |
 |---|---|
 | Staged learning path with milestones (this README) | ✅ v1 |
-| Curated resources per track and stage (courses, books, papers, tools) | 🚧 Coming next |
-| Hands-on project briefs from beginner to advanced (`projects/`) | 🚧 Planned |
+| [Curated resources](resources/) per track and stage (courses, books, papers, tools) | ✅ v1 |
+| Hands-on project briefs from beginner to advanced (`projects/`) | 🚧 Coming next |
 
 This is a living roadmap. It will grow with the field and with your contributions.
 
