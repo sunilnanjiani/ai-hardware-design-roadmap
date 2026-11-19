@@ -93,7 +93,8 @@ For the full beginner path into FPGA and ASIC engineering, follow the excellent 
 - Simulation with Verilator or Icarus, and testbenches with cocotb
 - Computer architecture basics: a simple RISC-V pipeline, memory hierarchy, bandwidth vs latency
 
-📚 **Resources:** [resources/foundations.md](resources/foundations.md#stage-0-hardware-foundations)
+📚 **Resources:** [resources/foundations.md](resources/foundations.md#stage-0-hardware-foundations)<br>
+🛠️ **Project:** [01 Pipelined INT8 MAC unit](projects/01-int8-mac-unit.md)
 
 **Milestones**
 
@@ -147,7 +148,8 @@ Pick **one** track to go deep on first. Each track has its own topics and milest
 - Performance and energy modelling: cycle counts, utilisation, design-space exploration tools (e.g. Timeloop/Accelergy, SCALE-Sim)
 - Case studies: Google TPU, NVDLA, Eyeriss, Gemmini
 
-📚 **Resources:** [resources/accelerator-design.md](resources/accelerator-design.md)
+📚 **Resources:** [resources/accelerator-design.md](resources/accelerator-design.md)<br>
+🛠️ **Project:** [02 Systolic array for matrix multiply](projects/02-systolic-array-matmul.md)
 
 **Milestones**
 
@@ -171,7 +173,8 @@ Pick **one** track to go deep on first. Each track has its own topics and milest
 - Verifying ML accelerators: golden models from PyTorch/NumPy, bit-accurate quantization checks
 - Open benchmarks and generators: riscv-dv, sv-tests
 
-📚 **Resources:** [resources/ml-verification.md](resources/ml-verification.md)
+📚 **Resources:** [resources/ml-verification.md](resources/ml-verification.md)<br>
+🛠️ **Project:** [04 ML-guided coverage closure](projects/04-ml-guided-coverage-closure.md)
 
 **Milestones**
 
@@ -194,7 +197,8 @@ Pick **one** track to go deep on first. Each track has its own topics and milest
 - Compilers and runtimes: ONNX, TVM, MLIR, TensorFlow Lite Micro, ExecuTorch
 - Edge deployment on CPUs and microcontrollers (e.g. Arm Cortex-M / Cortex-A)
 
-📚 **Resources:** [resources/hardware-aware-ml.md](resources/hardware-aware-ml.md)
+📚 **Resources:** [resources/hardware-aware-ml.md](resources/hardware-aware-ml.md)<br>
+🛠️ **Project:** [03 Quantized CNN on FPGA with hls4ml](projects/03-quantized-cnn-hls4ml.md)
 
 **Milestones**
 
@@ -225,7 +229,7 @@ Pick **one** track to go deep on first. Each track has its own topics and milest
 - [ ] Attach your accelerator to a RISC-V soft core and drive it from C code.
 - [ ] Publish a write-up of your project with a block diagram, results table and lessons learned.
 
-Hands-on project briefs for this stage are coming in the `projects/` folder (see [What's in this repo](#whats-in-this-repo)).
+🛠️ **Projects:** start with the [hands-on project briefs](projects/). Projects [05 (CNN accelerator, end to end)](projects/05-cnn-accelerator-end-to-end.md) and [06 (RISC-V SoC with a custom NPU)](projects/06-riscv-soc-with-npu.md) are built for this stage.
 
 ---
 
@@ -264,7 +268,7 @@ Pick the topics that interest you:
 |---|---|
 | Staged learning path with milestones (this README) | ✅ v1 |
 | [Curated resources](resources/) per track and stage (courses, books, papers, tools) | ✅ v1 |
-| Hands-on project briefs from beginner to advanced (`projects/`) | 🚧 Coming next |
+| [Hands-on project briefs](projects/) from beginner to advanced | ✅ v1 |
 
 This is a living roadmap. It will grow with the field and with your contributions.
 
