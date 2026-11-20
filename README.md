@@ -239,7 +239,9 @@ Pick **one** track to go deep on first. Each track has its own topics and milest
 
 Pick the topics that interest you:
 
-- **LLM inference hardware:** attention accelerators, KV-cache management, memory-bandwidth limits, speculative decoding
+- **LLM inference hardware:** prefill (compute-bound) vs. decode (memory-bound), KV-cache sizing and offloading, attention accelerators, speculative decoding, and splitting prefill and decode across separate hardware
+- **Modern AI silicon beyond your own designs:** GPU architecture (tensor cores, streaming multiprocessors, HBM bandwidth), and how non-NVIDIA chips such as Google TPU, AWS Trainium, Groq and Cerebras make different trade-offs
+- **Software that shapes the hardware:** serving engines (vLLM, SGLang), GPU kernels in Triton, FlashAttention; knowing what they do tells you what an inference chip must be good at
 - **Sparsity and compression in hardware:** sparse tensor cores, compressed formats, structured sparsity support
 - **Low-precision formats:** FP8, MX (microscaling) formats, posits, binary and ternary networks
 - **Beyond digital:** in-memory and near-memory compute, analog and photonic accelerators
@@ -247,7 +249,8 @@ Pick the topics that interest you:
 - **ML for EDA:** placement and routing with ML, timing and congestion prediction, LLM-assisted RTL design
 - **Reliability and security** of AI accelerators
 
-📚 **Resources:** [resources/advanced.md](resources/advanced.md#stage-4-advanced-and-research-topics)
+📚 **Resources:** [resources/advanced.md](resources/advanced.md#stage-4-advanced-and-research-topics)<br>
+🛠️ **Project:** [07 Profile and speed up LLM inference on a GPU](projects/07-llm-inference-profiling.md)
 
 **How to keep up**
 
@@ -258,6 +261,7 @@ Pick the topics that interest you:
 
 - [ ] Read and summarise three recent papers in one Stage 4 topic.
 - [ ] Reproduce one key result from a paper, even in simplified form.
+- [ ] Measure a small LLM's prefill and decode on real hardware and place both on a roofline.
 - [ ] Share what you learned: a blog post, a talk, or a pull request to this roadmap.
 
 ---

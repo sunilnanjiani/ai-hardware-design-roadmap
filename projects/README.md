@@ -14,6 +14,7 @@ Each brief gives you a goal, a specification, suggested steps and a **"done when
 | 04 | [ML-guided coverage closure](04-ml-guided-coverage-closure.md) | 🟡 Intermediate | Stage 2 · Track B | 2–3 weeks |
 | 05 | [CNN accelerator, end to end](05-cnn-accelerator-end-to-end.md) | 🔴 Advanced | Stage 3 · Tracks A + C | 1–2 months |
 | 06 | [RISC-V SoC with a custom NPU](06-riscv-soc-with-npu.md) | 🔴 Advanced | Stage 3 · Tracks A + B | 1–2 months |
+| 07 | [Profile and speed up LLM inference on a GPU](07-llm-inference-profiling.md) | 🔴 Advanced | Stage 4 · Tracks A + C | 3–4 weeks |
 
 Times assume a few hours per week alongside a job and are only a rough guide.
 
@@ -21,7 +22,8 @@ Times assume a few hours per week alongside a job and are only a rough guide.
 
 - **Accelerator designer:** 01 → 02 → 05 → 06
 - **Verification engineer:** 01 → 04 → 02 → 06
-- **Hardware-aware ML:** 01 → 03 → 05
+- **Hardware-aware ML:** 01 → 03 → 05 → 07
+- **LLM inference hardware:** 02 → 07, then revisit 05 with a transformer layer
 
 ## How to work on a project
 

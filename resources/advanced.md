@@ -24,6 +24,17 @@ Resources for [Stage 3](../README.md#stage-3-build-end-to-end) and [Stage 4](../
 
 - 📄 [FlashAttention](https://arxiv.org/abs/2205.14135) (Dao et al.) - IO-aware attention; a lesson in designing for the memory hierarchy.
 - 📄 [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) (Kwon et al.) - How the KV cache dominates LLM serving.
+- 📄 [LLM Inference Unveiled: Survey and Roofline Model Insights](https://arxiv.org/abs/2402.16363) (Yuan et al.) - Uses the roofline model to explain where LLM inference time goes; a natural next step after Stage 1.
+- 📄 [FlashAttention-3](https://arxiv.org/abs/2407.08608) (Shah et al.) - How attention is tuned to a specific GPU generation (Hopper); shows hardware features driving kernel design.
+- 📄 [Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192) (Leviathan et al.) - Trading extra compute for fewer memory-bound decode steps.
+- 📄 [DistServe](https://arxiv.org/abs/2401.09670) (Zhong et al.) and [Splitwise](https://arxiv.org/abs/2311.18677) (Patel et al.) - Running prefill and decode on separate hardware because they stress it so differently.
+- 📄 [AWQ](https://arxiv.org/abs/2306.00978) (Lin et al.) and [GPTQ](https://arxiv.org/abs/2210.17323) (Frantar et al.) - The two most used weight-only quantization methods for LLMs.
+- 📄 [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning](https://arxiv.org/abs/2304.01433) (Jouppi et al., ISCA 2023) - A modern non-GPU accelerator at scale, to compare with TPU v1.
+- 🎓 [How to Scale Your Model](https://jax-ml.github.io/scaling-book/) (Google DeepMind) - Free book on rooflines, memory and parallelism for LLMs on TPUs and GPUs.
+- 🛠️ [vLLM](https://github.com/vllm-project/vllm) - The most widely used open-source LLM serving engine; read it to learn continuous batching and paged KV cache.
+- 🛠️ [SGLang](https://github.com/sgl-project/sglang) - Another fast serving engine, with prefix caching (RadixAttention).
+- 🛠️ [Triton](https://github.com/triton-lang/triton) - Write GPU kernels in Python; the easiest way to feel memory bandwidth limits first hand.
+- 📄 [Inference infra learning roadmap](https://x.com/suraj_sharma14/status/2123748198225449037) (Suraj Sharma, X post, 2026) - A 12-stage checklist of the software side of LLM inference, from serving engines to kernels and distributed serving. Useful to see what the systems people around your chip will be working on.
 
 ### Low-precision formats
 
